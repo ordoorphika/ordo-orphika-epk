@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordo Orphika - Official Electronic Press Kit</title>
+    <meta name="description" content="Official EPK for Ordo Orphika - Seattle-based rock band. Bio, music, videos, tour dates, and press materials.">
+    <meta name="keywords" content="Ordo Orphika, occult rock, Seattle band, music, EPK, press kit">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ordo Orphika - Official Electronic Press Kit">
+    <meta property="og:description" content="Official EPK for Ordo Orphika - Seattle-based rock band. Bio, music, videos, tour dates, and press materials.">
+    <meta property="og:image" content="assets/pics/thumbnail.jpg">
+    <meta property="og:url" content="https://ordoorphika.github.io">
+    <meta property="og:site_name" content="Ordo Orphika">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ordo Orphika - Official Electronic Press Kit">
+    <meta name="twitter:description" content="Official EPK for Ordo Orphika - Seattle-based rock band. Bio, music, videos, tour dates, and press materials.">
+    <meta name="twitter:image" content="assets/pics/thumbnail.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Oswald:wght@400;500;600;700&family=Anton:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Custom Font -->
+    <style>
+        @font-face {
+            font-family: 'Ghost Theater';
+            src: url('assets/pics/Ghost Theater DEMO.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0a0a0f",
+                        accent: "#9f1239",
+                        gold: "#d4af37",
+                        dark: "#050508",
+                        neon: "#00ff9d",
+                        deepPurple: "#2d1b69"
+                    },
+                    fontFamily: {
+                        display: ['Oswald', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                        tech: ['JetBrains Mono', 'monospace'],
+                        band: ['Ghost Theater', 'Anton', 'sans-serif']
+                    },
+                    animation: {
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'float': 'float 6s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        glow: {
+                            'from': { 'text-shadow': '0 0 5px #fff, 0 0 10px #fff, 0 0 15px #d4af37, 0 0 20px #d4af37' },
+                            'to': { 'text-shadow': '0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d4af37, 0 0 40px #d4af37' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(20, 20, 40, 0.5) 50%, rgba(0, 0, 0, 0.7) 100%), 
+                        url('assets/pics/The%20Orphic%20Eye%20-%203D%20Enhanced.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-pattern {
+            background: linear-gradient(135deg, rgba(10, 10, 15, 0.95) 0%, rgba(45, 27, 105, 0.85) 100%);
+        }
+        .neon-border {
+            border: 1px solid rgba(0, 255, 157, 0.3);
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.1), inset 0 0 20px rgba(0, 255, 157, 0.05);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #d4af37, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .band-title-3d {
+            background: linear-gradient(135deg, #ffffff, #e0e0e0, #c0c0c0, #ffffff, #e0e0e0, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.9),
+                0 0 30px rgba(255, 255, 255, 0.7),
+                0 0 40px rgba(255, 255, 255, 0.5),
+                0 0 50px rgba(255, 255, 255, 0.3),
+                0 4px 0 rgba(0, 0, 0, 0.8),
+                0 8px 0 rgba(0, 0, 0, 0.6),
+                0 12px 0 rgba(0, 0, 0, 0.4),
+                0 16px 0 rgba(0, 0, 0, 0.2),
+                0 20px 0 rgba(0, 0, 0, 0.1),
+                0 0 0 3px rgba(0, 0, 0, 0.7),
+                0 0 0 4px rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.4));
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white font-body scroll-smooth">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-primary/95 backdrop-blur-md z-50 shadow-2xl border-b border-gold/20">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="flex items-center space-x-3">
+                    <img src="assets/pics/thumbnail.jpg" alt="Ordo Orphika Logo" class="h-10 w-10 rounded-full">
+                </a>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="hover:text-neon transition-all duration-300 hover:scale-110">Music</a>
+                    <a href="#contact" class="hover:text-accent transition-all duration-300 hover:scale-110">Contact</a>
+                    <a href="#" onclick="openBioPopup()" class="hover:text-neon transition-all duration-300 hover:scale-110">Bio</a>
+                    <!-- <a href="#tour" class="bg-gold text-primary px-4 py-2 rounded-full hover:scale-105 transition-all duration-200 font-tech">TOUR</a> -->
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gold hover:text-accent transition-colors">
+                        <i class="fab fa-spotify text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gold hover:text-accent transition-colors">
+                        <i class="fab fa-bandcamp text-xl"></i>
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden text-gold text-2xl focus:outline-none" aria-expanded="false" aria-controls="mobile-menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (hidden on md+) -->
+    <div id="mobile-menu" class="md:hidden fixed inset-0 z-40 hidden" aria-hidden="true">
+        <div id="mobile-menu-backdrop" class="absolute inset-0 bg-black/60"></div>
+        <div class="absolute top-0 right-0 w-3/4 max-w-xs h-full bg-primary/95 p-6 shadow-2xl">
+            <div class="flex items-center justify-between mb-8">
+                <div class="flex items-center space-x-3">
+                    <img src="assets/pics/thumbnail.jpg" alt="Logo" class="h-10 w-10 rounded-full">
+                </div>
+                <button id="mobile-menu-close" class="text-gold text-2xl focus:outline-none" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4" aria-label="Mobile navigation">
+                <a href="#bio" onclick="openBioPopup()" class="text-white hover:text-accent text-lg">Bio</a>
+                <a href="#music" class="text-white hover:text-neon text-lg">Music</a>
+                <a href="#videos" class="text-white hover:text-accent text-lg">Videos</a>
+                <a href="#tour" class="bg-gold text-primary px-4 py-2 rounded-full w-max">TOUR</a>
+                <a href="#press" class="text-white hover:text-accent text-lg">Press</a>
+                <a href="#contact" class="text-white hover:text-neon text-lg">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern min-h-screen flex items-center justify-center pt-24">
+        <div class="container mx-auto px-6 text-center">
+            <div class="animate-float">
+                <h1 class="text-8xl md:text-9xl lg:text-[12rem] font-band mb-6 tracking-wider band-title-3d">ORDO ORPHIKA</h1>
+            </div>
+            <!--<p class="text-2xl md:text-3xl italic text-white mb-10 font-light">{Sub Title Placeholder}</p>-->
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+                <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="bg-accent hover:bg-red-700 text-white px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl font-medium text-center">
+                    LISTEN NOW
+                </a>
+                <button onclick="scrollToSection('contact')" class="bg-gold text-primary px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-2xl font-medium focus:outline-none focus:ring-4 focus:ring-gold/40">
+                    CONTACT US
+                </button>
+            </div>
+            <div class="animate-bounce mt-20">
+                <a href="#music" class="text-gold text-4xl">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-primary py-24 relative">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0 bg-[url('assets/pics/band_pic.jpeg')] bg-cover bg-center"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-display font-bold text-white text-center mb-16">CONTACT</h2>
+            
+                <div class="max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
+                        <!-- Contact Information -->
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-display font-semibold text-white mb-2">BOOKING & INQUIRIES</h3>
+                            <p class="text-sm text-gray-300">For booking, press, or general inquiries please reach out using the form or the contact details below.</p>
+                            <div class="space-y-4 mt-4">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-gold rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-primary"></i>
+                                    </div>
+                                    <div class="min-w-0">
+                                        <p class="text-neon font-tech">EMAIL</p>
+                                        <a href="mailto:ordoorphika@gmail.com" class="text-white hover:text-accent transition-colors truncate">ordoorphika@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-gold rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                    </div>
+                                    <div class="min-w-0">
+                                        <p class="text-neon font-tech">LOCATION</p>
+                                        <p class="text-white">Seattle, WA</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Optional social links area (kept commented for future use) -->
+                            <!--
+                            <div class="mt-6">
+                                <h4 class="text-xl font-display text-gold mb-4">FOLLOW THE ORPHIC PATH</h4>
+                                <div class="flex space-x-4">
+                                    ...social icons...
+                                </div>
+                            </div>
+                            -->
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div>
+                            <div class="bg-dark/70 rounded-2xl p-6 md:p-8 neon-border">
+                                <h3 class="text-2xl font-display font-semibold text-white mb-6">SEND A MESSAGE</h3>
+                                <form action="https://formspree.io/f/movnzbkl" method="POST" class="space-y-6" id="contact-form">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-gray-300 mb-2 font-medium">NAME</label>
+                                            <input type="text" name="name" required class="w-full min-w-0 bg-primary/50 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold transition-colors">
+                                        </div>
+                                        <div>
+                                            <label class="block text-gray-300 mb-2 font-medium">EMAIL</label>
+                                            <input type="email" name="email" required class="w-full min-w-0 bg-primary/50 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold transition-colors">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-gray-300 mb-2 font-medium">SUBJECT</label>
+                                        <select name="subject" class="w-full bg-primary/50 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold transition-colors">
+                                            <option value="Booking Inquiry">Booking Inquiry</option>
+                                            <option value="Press Inquiry">Press Inquiry</option>
+                                            <option value="General Question">General Question</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-gray-300 mb-2 font-medium">MESSAGE</label>
+                                        <textarea name="message" rows="4" required class="w-full bg-primary/50 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold transition-colors"></textarea>
+                                    </div>
+                                    <div class="flex justify-end">
+                                        <button type="submit" class="w-full md:w-auto bg-accent hover:bg-red-700 text-white py-3 px-6 rounded-lg transition-colors font-medium">
+                                            SEND MESSAGE
+                                        </button>
+                                    </div>
+                                </form>
+                                <div id="form-status" class="mt-4 text-center hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-12 border-t border-gold/20">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="mb-8 flex items-center justify-center space-x-3">
+                    <img src="assets/pics/thumbnail.jpg" alt="Ordo Orphika Logo" class="h-12 w-12 rounded-full">
+                </div>
+                <div class="flex justify-center space-x-8 mb-8">
+                    <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="text-gray-400 hover:text-neon transition-colors">Music</a>
+                    <a href="#contact" class="text-gray-400 hover:text-accent transition-colors">Contact</a>
+                    <a href="#" onclick="openBioPopup()" class="text-gray-400 hover:text-neon transition-colors">Bio</a>
+                </div>
+                <div class="text-gray-500 text-sm">
+                    <p>© 2025 Ordo Orphika. All rights reserved.</p>
+                    <p class="mt-2">Seattle, WA • <a href="#" class="hover:text-accent">Privacy Policy</a> • <a href="#" class="hover:text-accent">Terms of Service</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bio Popup -->
+    <div id="bio-popup" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-dark/95 rounded-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto neon-border relative">
+            <button onclick="closeBioPopup()" class="absolute top-4 right-4 text-gold hover:text-accent text-3xl transition-colors">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <h2 class="text-3xl font-display font-bold text-white text-center mb-8">THE ORPHIC MYSTERY</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-8 items-start">
+                <div class="relative">
+                    <div class="neon-border rounded-2xl p-2">
+                        <img src="assets/pics/Band%20Pic%202.jpeg" alt="Ordo Orphika band members performing" class="rounded-2xl w-full h-auto shadow-2xl" loading="lazy">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-accent text-white p-3 rounded-xl shadow-2xl">
+                        <!--<p class="font-tech text-sm">EST. 2023 | SEATTLE</p>-->
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <p class="text-base leading-relaxed">
+                        A word of wisdom in foolish times is worth its weight in gold. And so it goes with the philosophy of transmutation at the heart of <span class="text-gold">Ordo Orphika</span>.
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        Genre agnostic, equal parts improvisation and orchestration, and with a mind of cult like inclusivity. We aspire to celebrate the ascent, and perhaps, descent of man, with our little society dedicated to our oldest rebel, the first poet and musician, the great founder of the oldest mystery religion, <span class="text-accent">Orpheus</span>, the one who names the gods.
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        Join us on our epic journey of self reflection and exploration as we reach to get over ourselves and see the bigger picture of what brings us all together across identity and ages.
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        <span class="text-gold">Ordo Orphika</span> is a 5 piece band from Seattle, their influences span a number of genres ranging from rock, blues, funk, jazz, lo fi, dance music, and psychedelia. It features Seattle music veterans <span class="text-accent">Ian McKagan</span> (Kings of Cavalier, Morning Glory Revival) on guitar and <span class="text-accent">Woody Frank</span> (Whitney Monge, Map of the Woulds) on bass, as well as Saxophonist (Dr.) <span class="text-accent">Mathew Wooten</span>, Keys player <span class="text-accent">Jon Plaut</span>, and the handsome and mysterious drummer <span class="text-accent">Robby DeRosa</span> from the exotic far eastern land of New Jersey!
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        <span class="text-neon font-semibold">What will you hear?</span>
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        Rich harmonies, interweaving and genre bending soloist, lyrics rich with meaning, symbolism and mythology, both old and new. Diverse songs that aspire to take you on a journey to a higher place within yourself, or maybe just to find the lowest common denominator.
+                    </p>
+                    <p class="text-base leading-relaxed text-accent font-semibold">
+                        Come and join the cult today! We have snakes!
+                    </p>
+                    
+                    <!-- Member Photos -->
+                    <div class="pt-6">
+                        <h4 class="text-xl font-display text-gold mb-4 text-center">THE ORPHIC COUNCIL</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center">
+                                <div class="neon-border rounded-xl p-2 mb-3">
+                                    <img src="assets/pics/Ian.jpeg" alt="Ian McKagan - Guitar" class="rounded-lg w-full h-32 object-cover shadow-xl">
+
+                                </div>
+                                <h5 class="text-sm font-display text-gold">Ian McKagan</h5>
+                                <p class="text-neon font-tech text-xs">Guitar</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="neon-border rounded-xl p-2 mb-3">
+                                    <img src="assets/pics/Johnny.jpeg" alt="Johnny - Keys" class="rounded-lg w-full h-32 object-cover shadow-xl">
+                                </div>
+                                <h5 class="text-sm font-display text-gold">Johnny</h5>
+                                <p class="text-neon font-tech text-xs">Keys</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Smooth scrolling for navigation
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Add click events to all navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                if (targetId) {
+                    scrollToSection(targetId);
+                }
+            });
+        });
+
+        // Mobile menu toggle: open/close, backdrop click, and auto-close on link click
+        (function() {
+            const openBtn = document.getElementById('mobile-menu-button');
+            const closeBtn = document.getElementById('mobile-menu-close');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const backdrop = document.getElementById('mobile-menu-backdrop');
+
+            function openMenu() {
+                if (!mobileMenu) return;
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.setAttribute('aria-hidden', 'false');
+                openBtn.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                if (!mobileMenu) return;
+                mobileMenu.classList.add('hidden');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+                openBtn.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = 'auto';
+            }
+
+            if (openBtn) openBtn.addEventListener('click', openMenu);
+            if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+            if (backdrop) backdrop.addEventListener('click', closeMenu);
+
+            // Close mobile menu when a link is clicked
+            document.querySelectorAll('#mobile-menu a[href^="#"]').forEach(a => {
+                a.addEventListener('click', function() {
+                    closeMenu();
+                });
+            });
+        })();
+
+        // Form submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const statusDiv = document.getElementById('form-status');
+            const submitButton = this.querySelector('button[type="submit"]');
+            
+            // Show loading state
+            submitButton.textContent = 'SENDING...';
+            submitButton.disabled = true;
+            statusDiv.className = 'mt-4 text-center text-neon';
+            statusDiv.textContent = 'Sending your message through esoteric channels...';
+            statusDiv.classList.remove('hidden');
+            
+            // Submit to Formspree
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    statusDiv.className = 'mt-4 text-center text-green-400';
+                    statusDiv.textContent = 'Message sent successfully! We will respond through esoteric channels.';
+                    this.reset();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                statusDiv.className = 'mt-4 text-center text-red-400';
+                statusDiv.textContent = 'There was a problem sending your message. Please try again or contact us directly.';
+            })
+            .finally(() => {
+                submitButton.textContent = 'SEND MESSAGE';
+                submitButton.disabled = false;
+            });
+        });
+
+        // Tour date RSVP functionality
+        document.querySelectorAll('button:contains("RSVP")').forEach(button => {
+            button.addEventListener('click', function() {
+                const eventName = this.closest('.flex').querySelector('h3').textContent;
+                alert(`RSVP requested for: ${eventName}\nYou will receive confirmation via email.`);
+            });
+        });
+
+        // Music player functionality
+        document.querySelectorAll('button:contains("Play")').forEach(button => {
+            button.addEventListener('click', function() {
+                const songName = this.closest('.flex').querySelector('h4').textContent;
+                alert(`Now playing: ${songName}\n(Audio player would activate here)`);
+            });
+        });
+
+        // Bio popup functionality
+        function openBioPopup() {
+            document.getElementById('bio-popup').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeBioPopup() {
+            document.getElementById('bio-popup').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close popup when clicking outside
+        document.getElementById('bio-popup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeBioPopup();
+            }
+        });
+
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeBioPopup();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -112,6 +112,14 @@
                 0 0 0 4px rgba(255, 255, 255, 0.3);
             filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.4));
         }
+        .logo-glow {
+            filter: 
+                drop-shadow(0 0 40px rgba(255, 255, 255, 0.9))
+                drop-shadow(0 0 80px rgba(255, 255, 255, 0.6))
+                drop-shadow(0 0 120px rgba(212, 175, 55, 0.4));
+            transform-origin: center;
+            transform: scale(1.1);
+        }
         .parallax {
             background-attachment: fixed;
             background-position: center;
@@ -178,8 +186,8 @@
             <div class="animate-float">
                 <!-- Keep an accessible H1 for SEO and screen readers, but visually hide the text since we're using an image logo -->
                 <h1 class="sr-only">Ordo Orphika</h1>
-                <!-- Floating responsive logo image replacing the text. Use same visual weight via sizing classes and existing band-title-3d for effects -->
-                <img src="assets/pics/OrdoOrphika_nobackground.png" alt="Ordo Orphika logo" class="mx-auto mb-6 w-[32rem] sm:w-[40rem] md:w-[48rem] lg:w-[64rem] band-title-3d" />
+                <!-- Floating responsive logo image replacing the text. Use logo-specific glow effect and larger sizes -->
+                <img src="assets/pics/OrdoOrphika_nobackground.png" alt="Ordo Orphika logo" class="mx-auto mb-6 w-[48rem] sm:w-[56rem] md:w-[64rem] lg:w-[72rem] logo-glow" />
             </div>
             <!--<p class="text-2xl md:text-3xl italic text-white mb-10 font-light">{Sub Title Placeholder}</p>-->
             <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">

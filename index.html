@@ -193,7 +193,7 @@
             </div>
             <nav class="flex flex-col space-y-4" aria-label="Mobile navigation">
                 <a href="#bio" onclick="openBioPopup()" class="text-white hover:text-accent text-lg">Bio</a>
-                <a href="videos.html" class="text-white hover:text-neon text-lg">Videos</a>
+                <a href="#videos" class="text-white hover:text-neon text-lg">Videos</a>
                 <a href="#music" class="text-white hover:text-neon text-lg">Music</a>
                 <a href="#tour" class="bg-gold text-primary px-4 py-2 rounded-full w-max">TOUR</a>
                 <a href="#press" class="text-white hover:text-accent text-lg">Press</a>
@@ -208,10 +208,10 @@
             <div class="animate-float">
                 <!-- Keep an accessible H1 for SEO and screen readers, but visually hide the text since we're using an image logo -->
                 <h1 class="sr-only">Ordo Orphika</h1>
-                <!-- Floating responsive logo image replacing the text. Use logo-specific glow effect and larger sizes -->
-                <img src="assets/pics/OrdoOrphica_Title_HD_no_background.png" alt="Ordo Orphika logo" class="mx-auto relative -top-8 w-[48rem] sm:w-[56rem] md:w-[64rem] lg:w-[72rem] logo-glow" />
+                <!-- Floating responsive logo image replacing the text. Scaled down to fit viewport while keeping impact -->
+                <img src="assets/pics/OrdoOrphica_Title_HD_no_background.png" alt="Ordo Orphika logo" class="mx-auto relative -top-6 max-w-[720px] w-[20rem] sm:w-[28rem] md:w-[36rem] lg:w-[44rem] logo-glow" />
             </div>
-            <div class="text-gold text-3xl sm:text-4xl md:text-5xl mb-12" style="font-family: 'Cormorant Regular', serif; letter-spacing: 0.2em; text-shadow: 0 0 20px rgba(212, 175, 55, 0.9), 0 0 40px rgba(212, 175, 55, 0.7), 0 0 60px rgba(212, 175, 55, 0.5);">
+            <div class="text-gold text-3xl sm:text-4xl md:text-5xl mb-12 font-display tracking-widest" style="text-shadow: 0 0 20px rgba(212, 175, 55, 0.9), 0 0 40px rgba(212, 175, 55, 0.7), 0 0 60px rgba(212, 175, 55, 0.5);">
                 Esoteric Funk N' Roll
             </div>
             <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
@@ -240,7 +240,7 @@
             <div class="absolute inset-0 bg-gradient-to-br from-transparent to-black"></div>
         </div>
         <div class="container mx-auto px-6 relative z-10">
-            <h2 class="text-4xl font-display font-bold text-white text-center mb-6">Offical Videos</h2>
+            <h2 class="text-4xl font-display font-bold text-white text-center mb-6">Official Videos</h2>
             <p class="text-center text-gray-300 max-w-2xl mx-auto mb-6">Check out our YouTube channel for more music, live clips, and behind-the-scenes footage.</p>
             <div class="text-center mb-8">
                 <a href="https://www.youtube.com/@OrdoOrphika" target="_blank" class="inline-flex items-center gap-3 bg-gold text-primary px-6 py-3 rounded-full shadow-2xl hover:scale-105 transition-transform font-display">
@@ -252,14 +252,14 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="neon-border rounded-2xl p-4 bg-dark/60">
                     <div class="relative" style="padding-top:56.25%;">
-                        <iframe id="player-thor" class="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/LUZy7ypJ6vE?enablejsapi=1&origin=" frameborder="0" title="Thor's Daze Blues - Ordo Orphika" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="player-thor" loading="lazy" class="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/LUZy7ypJ6vE?enablejsapi=1&origin=" frameborder="0" title="Thor's Daze Blues - Ordo Orphika" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <h3 class="mt-4 text-xl font-display text-gold">Thor's Daze Blues</h3>
                     <p class="text-sm text-gray-300 mt-1">Live in the Studio</p>
                 </div>
                 <div class="neon-border rounded-2xl p-4 bg-dark/60">
                     <div class="relative" style="padding-top:56.25%;">
-                        <iframe id="player-when" class="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/wEdK52XsZPI?enablejsapi=1&origin=" frameborder="0" title="When You Get Down - Ordo Orphika" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="player-when" loading="lazy" class="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/wEdK52XsZPI?enablejsapi=1&origin=" frameborder="0" title="When You Get Down - Ordo Orphika" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <h3 class="mt-4 text-xl font-display text-gold">When You Get Down</h3>
                     <p class="text-sm text-gray-300 mt-1">Live in the Studio</p>
@@ -386,7 +386,9 @@
                 <i class="fas fa-times"></i>
             </button>
             
-            <h2 class="text-3xl font-display font-bold text-white text-center mb-8">THE ORPHIC MYSTERY</h2>
+            <h2 class="text-3xl font-display font-bold text-white text-center mb-2">THE ORPHIC MYSTERY</h2>
+            <p class="text-center text-gray-400 mb-6">A concise history and the musical philosophy behind Ordo Orphika</p>
+            <div class="w-24 h-0.5 bg-gold mx-auto mb-6 rounded"></div>
             
             <div class="grid lg:grid-cols-2 gap-8 items-start">
                 <div class="relative">
@@ -402,13 +404,13 @@
                         A word of wisdom in foolish times is worth its weight in gold. And so it goes with the philosophy of transmutation at the heart of <span class="text-gold">Ordo Orphika</span>.
                     </p>
                     <p class="text-base leading-relaxed">
-                        Genre agnostic, equal parts improvisation and orchestration, and with a mind of cult like inclusivity. We aspire to celebrate the ascent, and perhaps, descent of man, with our little society dedicated to our oldest rebel, the first poet and musician, the great founder of the oldest mystery religion, <span class="text-accent">Orpheus</span>, the one who names the gods.
+                        Genre-agnostic, equal parts improvisation and orchestration, and with a spirit of cult-like inclusivity. We celebrate the ascent — and sometimes the descent — of man, through a society dedicated to our oldest rebel, the poet-musician and founder of the ancient mysteries, <span class="text-accent">Orpheus</span>.
                     </p>
                     <p class="text-base leading-relaxed">
-                        Join us on our epic journey of self reflection and exploration as we reach to get over ourselves and see the bigger picture of what brings us all together across identity and ages.
+                        Join us on a journey of self-reflection and exploration as we seek perspective, connection, and the shared mysteries that bind us across time.
                     </p>
                     <p class="text-base leading-relaxed">
-                        <span class="text-gold">Ordo Orphika</span> is a 5 piece band from Seattle, their influences span a number of genres ranging from rock, <span class="text-gold font-semibold">blues</span>, <span class="text-gold font-semibold">funk</span>, <span class="text-gold font-semibold">jazz</span>, <span class="text-gold font-semibold">lo fi</span>, <span class="text-gold font-semibold">dance music</span>, and <span class="text-gold font-semibold">psychedelia</span>. It features Seattle music veterans <span class="text-accent">Ian McKagan</span> (Kings of Cavalier, Morning Glory Revival) on guitar and <span class="text-accent">Woody Frank</span> (Whitney Monge, Map of the Woulds) on bass, as well as Saxophonist (Dr.) <span class="text-accent">Mathew Wooten</span>, Keys player <span class="text-accent">Jon Plaut</span>, and the handsome and mysterious drummer <span class="text-accent">Robby DeRosa</span> from the exotic far eastern land of New Jersey!
+                        <span class="text-gold">Ordo Orphika</span> is a 5 piece band from Seattle, their influences span a number of genres ranging from rock, <span class="text-gold font-semibold">blues</span>, <span class="text-gold font-semibold">funk</span>, jazz, lo fi, dance music, and <span class="text-gold font-semibold">psychedelia</span>. It features Seattle music veterans <span class="text-accent">Ian McKagan</span> (Kings of Cavalier, Morning Glory Revival) on guitar and <span class="text-accent">Woody Frank</span> (Whitney Monge, Map of the Woulds) on bass, as well as Saxophonist (Dr.) <span class="text-accent">Mathew Wooten</span>, Keys player <span class="text-accent">Jon Plaut</span>, and the handsome and mysterious drummer <span class="text-accent">Robby DeRosa</span> from the exotic far eastern land of New Jersey!
                     </p>
                     <p class="text-base leading-relaxed">
                         <span class="text-neon font-semibold">What will you hear?</span>
@@ -425,7 +427,7 @@
                         <h4 class="text-xl font-display text-gold mb-4 text-center">THE ORPHIC COUNCIL</h4>
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                             <div class="text-center">
-                                <div class="neon-border rounded-xl p-2 mb-3">
+                                <div class="neon-border rounded-xl p-2 mb-3 transform transition-transform hover:scale-105 hover:shadow-2xl">
                                     <img src="assets/pics/Ian.jpeg" alt="Ian McKagan - Guitar" class="rounded-lg w-full h-32 object-cover shadow-xl">
 
                                 </div>
@@ -433,28 +435,28 @@
                                 <p class="text-neon font-tech text-xs">Guitar</p>
                             </div>
                             <div class="text-center">
-                                <div class="neon-border rounded-xl p-2 mb-3">
+                                <div class="neon-border rounded-xl p-2 mb-3 transform transition-transform hover:scale-105 hover:shadow-2xl">
                                     <img src="assets/pics/Woody.jpeg" alt="Woody Frank - Bass" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                 </div>
                                 <h5 class="text-sm font-display text-gold">Woody Frank</h5>
                                 <p class="text-neon font-tech text-xs">Bass</p>
                             </div>
                             <div class="text-center">
-                                <div class="neon-border rounded-xl p-2 mb-3">
+                                <div class="neon-border rounded-xl p-2 mb-3 transform transition-transform hover:scale-105 hover:shadow-2xl">
                                     <img src="assets/pics/Jon.jpeg" alt="Jon Plaut - Keys" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                 </div>
                                 <h5 class="text-sm font-display text-gold">Jon Plaut</h5>
                                 <p class="text-neon font-tech text-xs">Keys</p>
                             </div>
                             <div class="text-center">
-                                <div class="neon-border rounded-xl p-2 mb-3">
+                                <div class="neon-border rounded-xl p-2 mb-3 transform transition-transform hover:scale-105 hover:shadow-2xl">
                                     <img src="assets/pics/Mathew.jpeg" alt="Mathew Wooten - Saxophone" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                 </div>
                                 <h5 class="text-sm font-display text-gold">Mathew Wooten</h5>
                                 <p class="text-neon font-tech text-xs">Saxophone</p>
                             </div>
                             <div class="text-center">
-                                <div class="neon-border rounded-xl p-2 mb-3">
+                                <div class="neon-border rounded-xl p-2 mb-3 transform transition-transform hover:scale-105 hover:shadow-2xl">
                                     <img src="assets/pics/Robby.jpeg" alt="Robby DeRosa - Drums" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                 </div>
                                 <h5 class="text-sm font-display text-gold">Robby DeRosa</h5>

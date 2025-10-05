@@ -213,6 +213,9 @@
         </div>
     </section>
 
+    <!-- Placeholder target for the down-arrow (kept visually hidden) -->
+    <div id="music" aria-hidden="true" class="h-0 overflow-hidden">&nbsp;</div>
+
     <!-- Contact Section -->
     <section id="contact" class="bg-primary py-24 relative">
         <div class="absolute inset-0 opacity-5">
@@ -376,17 +379,17 @@
                             </div>
                             <div class="text-center">
                                 <div class="neon-border rounded-xl p-2 mb-3">
+                                    <img src="assets/pics/Woody.jpeg" alt="Woody Frank - Bass" class="rounded-lg w-full h-32 object-cover shadow-xl">
+                                </div>
+                                <h5 class="text-sm font-display text-gold">Woody Frank</h5>
+                                <p class="text-neon font-tech text-xs">Bass</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="neon-border rounded-xl p-2 mb-3">
                                     <img src="assets/pics/Jon.jpeg" alt="Jon Plaut - Keys" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                 </div>
                                 <h5 class="text-sm font-display text-gold">Jon Plaut</h5>
                                 <p class="text-neon font-tech text-xs">Keys</p>
-                            </div>
-                            <div class="text-center">
-                                <div class="neon-border rounded-xl p-2 mb-3">
-                                    <img src="assets/pics/Robby.jpeg" alt="Robby DeRosa - Drums" class="rounded-lg w-full h-32 object-cover shadow-xl">
-                                </div>
-                                <h5 class="text-sm font-display text-gold">Robby DeRosa</h5>
-                                <p class="text-neon font-tech text-xs">Drums</p>
                             </div>
                             <div class="text-center">
                                 <div class="neon-border rounded-xl p-2 mb-3">
@@ -397,10 +400,10 @@
                             </div>
                             <div class="text-center">
                                 <div class="neon-border rounded-xl p-2 mb-3">
-                                    <img src="assets/pics/Woody.jpeg" alt="Woody Frank - Bass" class="rounded-lg w-full h-32 object-cover shadow-xl">
+                                    <img src="assets/pics/Robby.jpeg" alt="Robby DeRosa - Drums" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                 </div>
-                                <h5 class="text-sm font-display text-gold">Woody Frank</h5>
-                                <p class="text-neon font-tech text-xs">Bass</p>
+                                <h5 class="text-sm font-display text-gold">Robby DeRosa</h5>
+                                <p class="text-neon font-tech text-xs">Drums</p>
                             </div>
                         </div>
                     </div>
@@ -417,13 +420,20 @@
             });
         }
 
-        // Add click events to all navigation links
+            // Add click events to all navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
+                const href = this.getAttribute('href');
+                const targetId = href && href.startsWith('#') ? href.substring(1) : null;
                 if (targetId) {
-                    scrollToSection(targetId);
+                    const el = document.getElementById(targetId);
+                    if (el) {
+                        scrollToSection(targetId);
+                    } else {
+                        // Target not found — don't throw; log for debugging
+                        console.warn(`Scroll target not found: #${targetId}`);
+                    }
                 }
             });
         });

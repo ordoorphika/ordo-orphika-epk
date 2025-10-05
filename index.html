@@ -1,124 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <base target="_self">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Ordo Orphika - Official Electronic Press Kit</title>
-  <meta name="description" content="Official EPK for Ordo Orphika - Seattle-based rock band. Bio, music, videos, tour dates, and press materials.">
-  <meta name="keywords" content="Ordo Orphika, occult rock, Seattle band, music, EPK, press kit">
-
-  <!-- Open Graph Social Media -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Ordo Orphika - Official Electronic Press Kit">
-  <meta property="og:description" content="Official EPK for Ordo Orphika - Seattle-based rock band. Bio, music, videos, tour dates, and press materials.">
-  <meta property="og:image" content="assets/pics/OrdoOrphicaLogoHDnobackground.png">
-  <meta property="og:url" content="https://ordoorphika.github.io">
-  <meta property="og:site_name" content="Ordo Orphika">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ordo Orphika - Official Electronic Press Kit">
-  <meta name="twitter:description" content="Official EPK for Ordo Orphika - Seattle-based rock band. Bio, music, videos, tour dates, and press materials.">
-  <meta name="twitter:image" content="assets/pics/OrdoOrphicaLogoHDnobackground.png">
-
-  <!-- Favicon -->
+  <!-- REST OF YOUR META TAGS and LINKS... -->
   <link rel="icon" type="image/png" href="assets/pics/OrdoOrphicaLogoHDnobackground.png">
-
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
-  <!-- Custom Style Overrides -->
   <style>
-    :root {
-      --charcoal: #23272f;
-      --slateAccent: #1f2937;
-      --gold: #d4af37;
-      --soundcloud-orange: #ff5500;
-    }
-    /* Remove all purples/accent colors */
-    body, .bg-primary, .bg-accent, .hero-pattern, .section-pattern, .bg-primary95, .bg-primary50, .bg-primary70, .bg-primary90, .bg-dark, .bg-dark95 {
-      background-color: var(--charcoal) !important;
-    }
-    .section-pattern, .hero-pattern {
-      background: linear-gradient(135deg, rgba(31,41,55,0.94) 0%, rgba(35,39,47,0.93) 100%) !important;
-    }
-    /* Button Styles */
     .cta-primary, .cta-secondary {
-      background: var(--charcoal) !important;
-      color: var(--gold) !important;
-      border: 1px solid var(--gold);
-      border-radius: 0.75rem;
+      background-color: #23272f !important;  /* charcoal/slate */
+      color: #ffe066 !important;             /* gold/yellow */
+      border: none;
+      border-radius: 0.5rem;
       font-weight: 600;
-      font-size: 1rem;
-      transition: all 0.18s ease;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     }
     .cta-primary:hover, .cta-secondary:hover, .cta-primary:focus, .cta-secondary:focus {
-      color: var(--charcoal) !important;
-      background: var(--gold) !important;
-      outline: 2px solid var(--gold);
-      border: 1px solid var(--gold) !important;
+      background-color: #23272f !important;
+      color: #fffbe6 !important;
+      box-shadow: 0 0 8px #d4af3760;
     }
     .cta-soundcloud {
-      background: var(--charcoal) !important;
-      color: var(--soundcloud-orange) !important;
-      border: 1px solid var(--soundcloud-orange) !important;
-      border-radius: 0.75rem;
+      background-color: #23272f !important;
+      color: #ff5500 !important; /* SoundCloud orange */
+      border: none;
+      border-radius: 0.5rem;
       font-weight: 600;
-      font-size: 1rem;
-      transition: all 0.18s ease;
+      transition: background 0.2s, color 0.2s;
     }
     .cta-soundcloud:hover, .cta-soundcloud:focus {
-      background: #2d3748 !important;
-      color: var(--gold) !important;
-      border: 1px solid var(--soundcloud-orange) !important;
-      outline: 2px solid var(--gold);
-    }
-    /* Borders and Neon */
-    .neon-border {
-      border: 1px solid rgba(212, 175, 55, 0.25);
-      box-shadow: 0 0 20px rgba(212, 175, 55, 0.08), inset 0 0 18px var(--slateAccent, #1f2937, 0.08);
-    }
-    /* Navigation and hover text accent */
-    a:hover, .hover\:text-accent:hover, .hover\:text-gold:hover {
-      color: var(--gold) !important;
-    }
-    /* Gold/yellow and slate bg helpers */
-    .bg-slateAccent { background-color: var(--slateAccent) !important; color: var(--gold) !important;}
-    .bg-gold { background-color: var(--gold) !important; color: var(--charcoal) !important;}
-    /* SoundCloud icon specifically */
-    .text-soundcloud {
-      color: var(--soundcloud-orange) !important;
-    }
-    /* Border for section containers */
-    .section-border {
-      border: 1px solid rgba(212, 175, 55, 0.25);
-      border-radius: 0.75rem;
-      box-shadow: 0 0 10px rgba(212,175,55,0.05);
+      background-color: #23272f !important;
+      color: #ffe066 !important; /* gold/yellow on hover */
     }
   </style>
 </head>
 <body class="bg-dark text-white font-body scroll-smooth">
 
 <!-- Navigation Bar -->
-<nav class="fixed w-full bg-charcoal backdrop-blur-md z-50 shadow-2xl border-b border-gold/20">
+<nav class="fixed w-full bg-dark z-50 shadow-2xl border-b border-yellow-200/20">
   <div class="container mx-auto px-6 py-4">
     <div class="flex justify-between items-center">
       <a href="#home" class="flex items-center space-x-3">
         <img src="assets/pics/OrdoOrphicaLogoHDnobackground.png" alt="Ordo Orphika Logo" class="h-10 w-10 rounded-full" />
-        <span class="hidden sm:inline-block text-gold font-bold text-xl tracking-wide">Ordo Orphika</span>
+        <span class="hidden sm:inline-block text-yellow-300 font-bold text-xl tracking-wide">Ordo Orphika</span>
       </a>
       <div class="hidden md:flex space-x-6 items-center">
-        <a href="#music" class="hover:text-gold transition-all duration-300 hover:scale-110">Music</a>
-        <a href="#videos" class="hover:text-gold transition-all duration-300 hover:scale-110">Videos</a>
-        <a href="#contact" class="hover:text-gold transition-all duration-300 hover:scale-110">Contact</a>
-        <a href="#bio" class="hover:text-gold transition-all duration-300 hover:scale-110">Bio</a>
+        <a href="#music" class="hover:text-yellow-300 transition-all duration-300 hover:scale-110">Music</a>
+        <a href="#videos" class="hover:text-yellow-300 transition-all duration-300 hover:scale-110">Videos</a>
+        <a href="#contact" class="hover:text-yellow-300 transition-all duration-300 hover:scale-110">Contact</a>
+        <a href="#bio" class="hover:text-yellow-300 transition-all duration-300 hover:scale-110">Bio</a>
       </div>
-      <!-- Social/CTA Buttons -->
       <div class="flex space-x-4 items-center">
         <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" rel="noopener" aria-label="SoundCloud" class="cta-soundcloud inline-flex items-center gap-1 px-4 py-2">
-          <i class="fab fa-soundcloud text-soundcloud"></i>LISTEN NOW
+          <i class="fab fa-soundcloud"></i>LISTEN NOW
         </a>
         <a href="https://www.youtube.com/OrdoOrphika" target="_blank" rel="noopener" class="cta-secondary inline-flex items-center gap-1 px-4 py-2">
           <i class="fab fa-youtube"></i>YouTube
@@ -128,26 +64,24 @@
   </div>
 </nav>
 
-<!-- Hero Section -->
 <section id="home" class="hero-pattern min-h-screen flex flex-col justify-center items-center text-center py-40">
-  <img src="assets/pics/OrdoOrphicaLogoHDnobackground.png" alt="Ordo Orphika Logo" class="w-32 h-32 md:w-48 md:h-48 mx-auto mb-6 neon-border" />
-  <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-gold mb-4">Ordo Orphika</h1>
-  <h2 class="text-2xl md:text-3xl font-light text-gold mb-6">Seattle Occult Rock</h2>
+  <img src="assets/pics/OrdoOrphicaLogoHDnobackground.png" alt="Ordo Orphika Logo" class="w-32 h-32 md:w-48 md:h-48 mx-auto mb-6" style="border: 2px solid #ffe066; border-radius: 50%;">
+  <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-yellow-200 mb-4">Ordo Orphika</h1>
+  <h2 class="text-2xl md:text-3xl font-light text-yellow-200 mb-6">Seattle Occult Rock</h2>
   <div class="flex items-center justify-center space-x-6 my-4">
     <a href="#music" class="cta-primary px-6 py-3">Listen</a>
     <a href="#videos" class="cta-secondary px-6 py-3">Watch</a>
   </div>
 </section>
 
-<!-- Music Section -->
-<section id="music" class="section-pattern py-20">
+<section id="music" class="py-20">
   <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
     <div class="flex-1">
-      <h3 class="text-3xl font-bold text-gold mb-2">Music</h3>
+      <h3 class="text-3xl font-bold text-yellow-200 mb-2">Music</h3>
       <p class="mb-6">Stream our latest releases and albums. For licensing, contact us directly below.</p>
       <div class="flex space-x-4 mt-4">
         <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" rel="noopener" class="cta-soundcloud inline-flex items-center gap-2 px-5 py-2">
-          <i class="fab fa-soundcloud text-soundcloud"></i>SoundCloud
+          <i class="fab fa-soundcloud"></i>SoundCloud
         </a>
         <a href="https://music.youtube.com/channel/OrdoOrphika" target="_blank" rel="noopener" class="cta-secondary inline-flex items-center gap-2 px-5 py-2">
           <i class="fab fa-youtube"></i>YouTube Music
@@ -162,75 +96,69 @@
   </div>
 </section>
 
-<!-- Videos Section -->
-<section id="videos" class="section-pattern py-20">
+<section id="videos" class="py-20">
   <div class="container mx-auto">
-    <h3 class="text-3xl font-bold text-gold mb-2">Videos</h3>
+    <h3 class="text-3xl font-bold text-yellow-200 mb-2">Videos</h3>
     <p class="mb-6">Check out our YouTube channel for more music, live clips, and behind-the-scenes footage.</p>
-    <!-- Video grid goes here (YouTube embeds or local video if desired) -->
     <div class="flex space-x-4 mt-4">
       <a href="videos.html" class="cta-primary px-6 py-3">View Video Gallery</a>
     </div>
   </div>
 </section>
 
-<!-- Tour/Dates Section -->
-<section id="tour" class="section-pattern py-16">
+<section id="tour" class="py-16">
   <div class="container mx-auto">
-    <h3 class="text-3xl font-bold text-gold mb-4">Upcoming Shows</h3>
+    <h3 class="text-3xl font-bold text-yellow-200 mb-4">Upcoming Shows</h3>
     <ul class="space-y-3 text-md">
-      <li class="flex justify-between neon-border px-5 py-2">
+      <li class="flex justify-between px-5 py-2" style="border: 1px solid #ffe066;border-radius:.5rem;">
         <span>Nov 1, 2025</span>
         <span>Seattle, WA – The Crocodile</span>
-        <span class="font-semibold text-gold">Tickets TBA</span>
+        <span class="font-semibold text-yellow-200">Tickets TBA</span>
       </li>
-      <li class="flex justify-between neon-border px-5 py-2">
+      <li class="flex justify-between px-5 py-2" style="border: 1px solid #ffe066;border-radius:.5rem;">
         <span>Dec 3, 2025</span>
         <span>Portland, OR – Dante's</span>
-        <span class="font-semibold text-gold">Tickets TBA</span>
+        <span class="font-semibold text-yellow-200">Tickets TBA</span>
       </li>
     </ul>
   </div>
 </section>
 
-<!-- Bio Section -->
-<section id="bio" class="section-pattern py-16">
+<section id="bio" class="py-16">
   <div class="container mx-auto md:w-2/3">
-    <h3 class="text-3xl font-bold text-gold mb-2">Bio</h3>
+    <h3 class="text-3xl font-bold text-yellow-200 mb-2">Bio</h3>
     <p class="mb-6">Ordo Orphika is an occult-inspired rock band based in Seattle, weaving stories of shadow, ritual, and transformation with thunderous riffs and haunting melodies. Fueled by arcane mythologies and electric energy, their sound blends the heavy, the surreal, and the sublime.</p>
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section-pattern py-16">
+<section id="contact" class="py-16">
   <div class="container mx-auto md:w-2/3">
-    <h3 class="text-3xl font-bold text-gold mb-2">Contact</h3>
+    <h3 class="text-3xl font-bold text-yellow-200 mb-2">Contact</h3>
     <p class="mb-6">For booking, press, or general inquiries please reach out using the form or the contact details below.</p>
-    <form action="https://formspree.io/f/{yourformid}" method="POST" class="space-y-5 section-border p-6 bg-dark">
+    <form action="https://formspree.io/f/{yourformid}" method="POST" class="space-y-5 p-6" style="border:1px solid #ffe066;border-radius:.5rem;">
       <div>
-        <label for="name" class="block text-gold">Name</label>
-        <input type="text" id="name" name="name" required class="w-full px-4 py-2 bg-slateAccent border border-gold/10 focus:outline-gold text-white rounded">
+        <label for="name" class="block text-yellow-200">Name</label>
+        <input type="text" id="name" name="name" required class="w-full px-4 py-2 bg-gray-800 border border-yellow-100 focus:outline-yellow-200 text-white rounded">
       </div>
       <div>
-        <label for="email" class="block text-gold">Email</label>
-        <input type="email" id="email" name="email" required class="w-full px-4 py-2 bg-slateAccent border border-gold/10 focus:outline-gold text-white rounded">
+        <label for="email" class="block text-yellow-200">Email</label>
+        <input type="email" id="email" name="email" required class="w-full px-4 py-2 bg-gray-800 border border-yellow-100 focus:outline-yellow-200 text-white rounded">
       </div>
       <div>
-        <label for="message" class="block text-gold">Message</label>
-        <textarea id="message" name="message" rows="6" required class="w-full px-4 py-2 bg-slateAccent border border-gold/10 focus:outline-gold text-white rounded"></textarea>
+        <label for="message" class="block text-yellow-200">Message</label>
+        <textarea id="message" name="message" rows="6" required class="w-full px-4 py-2 bg-gray-800 border border-yellow-100 focus:outline-yellow-200 text-white rounded"></textarea>
       </div>
       <button type="submit" class="cta-primary w-full py-3">Send Message</button>
     </form>
     <div class="mt-6 text-center">
-      <span class="block text-lg font-semibold text-gold">LOCATION</span>
+      <span class="block text-lg font-semibold text-yellow-200">LOCATION</span>
       <p class="mt-2 mb-3">Seattle, WA</p>
       <a href="mailto:ordoorphika@gmail.com" class="cta-secondary px-5 py-2 inline-block">ordoorphika@gmail.com</a>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-charcoal py-12 border-t border-gold/20">
+<footer class="bg-dark py-12 border-t border-yellow-200/20">
   <div class="container mx-auto text-center text-sm">
     &copy; 2025 Ordo Orphika. All Rights Reserved.
   </div>

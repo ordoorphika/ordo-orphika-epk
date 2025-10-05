@@ -1,107 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ordo Orphika - Videos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .section-pattern {
-            background: linear-gradient(135deg, rgba(10, 10, 15, 0.95) 0%, rgba(45, 27, 105, 0.85) 100%);
-        }
-        .neon-border {
-            border: 1px solid rgba(212, 175, 55, 0.25);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.08), inset 0 0 18px rgba(31, 41, 55, 0.06);
-        }
-        /* CTA utility classes */
-        .cta-primary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            background: #d4af37; /* gold */
-            color: #050508; /* primary dark text */
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.75rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: transform .18s ease, box-shadow .18s ease;
-            box-shadow: 0 8px 20px rgba(212,175,55,0.08);
-        }
-        .cta-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 30px rgba(212,175,55,0.12); }
-        .cta-secondary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            background: transparent;
-            color: #d4af37; /* gold text */
-            padding: 0.6rem 1.25rem;
-            border-radius: 0.6rem;
-            border: 1px solid rgba(212,175,55,0.18);
-            font-weight: 600;
-            text-decoration: none;
-            transition: transform .15s ease, filter .15s ease;
-        }
-        .cta-secondary:hover { transform: translateY(-2px) scale(1.01); filter:brightness(1.05); }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ordo Orphika - Videos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    :root {
+      --charcoal: #23272f;
+      --slate: #1f2937;
+      --gold: #d4af37;
+      --soundcloud-orange: #ff5500;
+    }
+    body,
+    .bg-dark,
+    .section-pattern {
+      background: var(--charcoal) !important;
+      color: white !important;
+    }
+    .section-pattern {
+      background: linear-gradient(135deg, rgba(31,41,55,0.96) 0%, rgba(35,39,47,0.94) 100%) !important;
+    }
+    /* Buttons */
+    .cta-primary, .cta-secondary {
+      background: var(--charcoal) !important;
+      color: var(--gold) !important;
+      border: 1px solid var(--gold);
+      border-radius: 0.75rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.18s ease;
+    }
+    .cta-primary:hover, .cta-secondary:hover, .cta-primary:focus, .cta-secondary:focus {
+      color: var(--charcoal) !important;
+      background: var(--gold) !important;
+      outline: 2px solid var(--gold) !important;
+      border: 1px solid var(--gold) !important;
+    }
+    .cta-soundcloud {
+      background: var(--charcoal) !important;
+      color: var(--soundcloud-orange) !important;
+      border: 1px solid var(--soundcloud-orange) !important;
+      border-radius: 0.75rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.18s ease;
+    }
+    .cta-soundcloud:hover, .cta-soundcloud:focus {
+      background: #2d3748 !important;
+      color: var(--gold) !important;
+      border: 1px solid var(--soundcloud-orange) !important;
+      outline: 2px solid var(--gold);
+    }
+    /* Neon Border */
+    .neon-border {
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.08), inset 0 0 18px var(--slate, #1f2937, 0.08);
+    }
+    /* Text gold */
+    .text-gold { color: var(--gold) !important; }
+    /* Navigation hover */
+    a:hover, .hover\:text-gold:hover {
+      color: var(--gold) !important;
+    }
+    .bg-gold {
+      background-color: var(--gold) !important;
+      color: var(--charcoal) !important;
+    }
+    .bg-slate {
+      background-color: var(--slate) !important;
+      color: var(--gold) !important;
+    }
+    /* Section border */
+    .section-border {
+      border: 1px solid rgba(212,175,55,0.25);
+      border-radius: 0.75rem;
+      box-shadow: 0 0 10px rgba(212,175,55,0.05);
+    }
+    .text-soundcloud {
+      color: var(--soundcloud-orange) !important;
+    }
+  </style>
 </head>
-<body class="bg-dark text-white font-body section-pattern">
-    <nav class="fixed w-full bg-primary/95 backdrop-blur-md z-50 shadow-2xl border-b border-gold/20">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3">
-                <img src="assets/pics/thumbnail.jpg" alt="Ordo Orphika" class="h-10 w-10 rounded-full">
-            </a>
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="index.html#home" class="hover:text-gold transition-all duration-300">Home</a>
-                <a href="index.html#music" class="hover:text-gold transition-all duration-300">Music</a>
-                <a href="videos.html" class="text-gold font-semibold">Videos</a>
-                <a href="index.html#contact" class="hover:text-accent transition-all duration-300">Contact</a>
-            </div>
-            <div class="md:hidden">
-                <a href="index.html" class="cta-secondary">Back</a>
-            </div>
+
+<body class="bg-dark text-white font-body">
+  <!-- Navigation Bar (same as index.html for consistency) -->
+  <nav class="fixed w-full bg-charcoal backdrop-blur-md z-50 shadow-2xl border-b border-gold/20">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="index.html#home" class="flex items-center space-x-3">
+          <img src="assets/pics/OrdoOrphicaLogoHDnobackground.png" alt="Ordo Orphika Logo" class="h-10 w-10 rounded-full" />
+          <span class="hidden sm:inline-block text-gold font-bold text-xl tracking-wide">Ordo Orphika</span>
+        </a>
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="index.html#music" class="hover:text-gold transition-all duration-300 hover:scale-110">Music</a>
+          <a href="videos.html" class="hover:text-gold transition-all duration-300 hover:scale-110">Videos</a>
+          <a href="index.html#contact" class="hover:text-gold transition-all duration-300 hover:scale-110">Contact</a>
+          <a href="index.html#bio" class="hover:text-gold transition-all duration-300 hover:scale-110">Bio</a>
         </div>
-    </nav>
-
-    <main class="pt-28 pb-16">
-        <div class="container mx-auto px-6">
-            <h1 class="text-4xl font-display text-gold text-center mb-8">Official Videos</h1>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="neon-border rounded-2xl p-4 bg-dark/60">
-                    <div class="relative" style="padding-top:56.25%;">
-                        <!-- Embed Thor's Daze Blues -->
-                        <iframe loading="lazy" class="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/jKHvcROkkqc" title="Thor's Daze Blues - Ordo Orphika" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <h3 class="mt-4 text-xl font-display text-gold">Thor's Daze Blues</h3>
-                    <p class="text-sm text-gray-300 mt-1">Live in the Studio</p>
-                </div>
-                <div class="neon-border rounded-2xl p-4 bg-dark/60">
-                    <div class="relative" style="padding-top:56.25%;">
-                        <!-- Embed When You Get Down -->
-                        <iframe loading="lazy" class="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/iCCGGqersgg" title="When You Get Down - Ordo Orphika" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <h3 class="mt-4 text-xl font-display text-gold">When You Get Down</h3>
-                    <p class="text-sm text-gray-300 mt-1">Live in the Studio</p>
-                </div>
-            </div>
-
+        <!-- Social/CTA Buttons -->
+        <div class="flex space-x-4 items-center">
+          <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" rel="noopener" aria-label="SoundCloud" class="cta-soundcloud inline-flex items-center gap-1 px-4 py-2">
+            <i class="fab fa-soundcloud text-soundcloud"></i>LISTEN NOW
+          </a>
+          <a href="https://www.youtube.com/OrdoOrphika" target="_blank" rel="noopener" class="cta-secondary inline-flex items-center gap-1 px-4 py-2">
+            <i class="fab fa-youtube"></i>YouTube
+          </a>
         </div>
-    </main>
+      </div>
+    </div>
+  </nav>
 
-    <footer class="bg-dark py-12 border-t border-gold/20">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            © 2025 Ordo Orphika
+  <main class="pt-28 pb-10 section-pattern">
+    <div class="container mx-auto px-6">
+      <h1 class="text-4xl font-display text-gold text-center mb-12">Official Videos</h1>
+      <!-- Video grid: Replace with your band's video embeds -->
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="neon-border p-6 rounded-lg flex flex-col items-center bg-dark">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Live Studio Session" frameborder="0" allowfullscreen></iframe>
+          <h2 class="text-xl text-gold font-semibold mt-4 mb-2">Live in the Studio</h2>
+          <p>Session recorded at Seattle's renowned Witchwood Studios.</p>
         </div>
-    </footer>
+        <div class="neon-border p-6 rounded-lg flex flex-col items-center bg-dark">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/aBcDeFgHiJk" title="Official Music Video" frameborder="0" allowfullscreen></iframe>
+          <h2 class="text-xl text-gold font-semibold mt-4 mb-2">Ritual & Ruin - Official Video</h2>
+          <p>The band's official occult-inspired music video.</p>
+        </div>
+        <!-- Add more video blocks as needed -->
+      </div>
+      <div class="flex justify-center mt-12 gap-6">
+        <a href="https://www.youtube.com/OrdoOrphika" target="_blank" class="cta-primary px-6 py-3">Visit YouTube Channel</a>
+        <a href="index.html#music" class="cta-secondary px-6 py-3">Back to Music</a>
+      </div>
+    </div>
+  </main>
 
-    <!-- aspect-ratio polyfill for older browsers -->
-    <style>
-    .aspect-w-16{position:relative}
-    .aspect-w-16:before{content:"";display:block;padding-top:56.25%}
-    .aspect-w-16 > iframe{position:absolute;top:0;left:0;width:100%;height:100%}
-    </style>
+  <footer class="bg-charcoal py-12 border-t border-gold/20 mt-10">
+    <div class="container mx-auto text-center text-sm">
+      &copy; 2025 Ordo Orphika. All Rights Reserved.
+    </div>
+  </footer>
 </body>
 </html>

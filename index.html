@@ -154,18 +154,22 @@
                     <img src="assets/pics/thumbnail.jpg" alt="Ordo Orphika Logo" class="h-10 w-10 rounded-full">
                 </a>
                 <div class="hidden md:flex space-x-6 items-center">
-                    <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="hover:text-neon transition-all duration-300 hover:scale-110">Music</a>
+                    <!-- Temporarily commented out old Music link -->
+                    <!-- <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="hover:text-neon transition-all duration-300 hover:scale-110">Music</a> -->
                     <a href="#videos" class="hover:text-neon transition-all duration-300 hover:scale-110">Videos</a>
                     <a href="#contact" class="hover:text-accent transition-all duration-300 hover:scale-110">Contact</a>
                     <a href="#" onclick="openBioPopup()" class="hover:text-neon transition-all duration-300 hover:scale-110">Bio</a>
                     <!-- <a href="#tour" class="bg-gold text-primary px-4 py-2 rounded-full hover:scale-105 transition-all duration-200 font-tech">TOUR</a> -->
                 </div>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-gold hover:text-accent transition-colors">
-                        <i class="fab fa-spotify text-xl"></i>
+                <div class="flex space-x-4 items-center">
+                    <!-- Commenting out older social icons; replacing with explicit SoundCloud and YouTube links -->
+                    <!-- <a href="#" class="text-gold hover:text-accent transition-colors"> <i class="fab fa-spotify text-xl"></i> </a> -->
+                    <!-- <a href="#" class="text-gold hover:text-accent transition-colors"> <i class="fab fa-bandcamp text-xl"></i> </a> -->
+                    <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="text-gold hover:text-accent transition-colors" aria-label="SoundCloud">
+                        <i class="fab fa-soundcloud text-xl"></i>
                     </a>
-                    <a href="#" class="text-gold hover:text-accent transition-colors">
-                        <i class="fab fa-bandcamp text-xl"></i>
+                    <a href="https://www.youtube.com/results?search_query=Ordo+Orphika" target="_blank" class="text-gold hover:text-accent transition-colors" aria-label="YouTube">
+                        <i class="fab fa-youtube text-xl"></i>
                     </a>
                     <button id="mobile-menu-button" class="md:hidden text-gold text-2xl focus:outline-none" aria-expanded="false" aria-controls="mobile-menu">
                         <i class="fas fa-bars"></i>
@@ -237,7 +241,13 @@
         </div>
         <div class="container mx-auto px-6 relative z-10">
             <h2 class="text-4xl font-display font-bold text-white text-center mb-6">Offical Videos</h2>
-            <p class="text-center text-gray-300 max-w-2xl mx-auto mb-10">Check out our YouTube channel for more music and live performances.</p>
+            <p class="text-center text-gray-300 max-w-2xl mx-auto mb-6">Check out our YouTube channel for more music, live clips, and behind-the-scenes footage.</p>
+            <div class="text-center mb-8">
+                <a href="https://www.youtube.com/results?search_query=Ordo+Orphika" target="_blank" class="inline-flex items-center gap-3 bg-gold text-primary px-6 py-3 rounded-full shadow-2xl hover:scale-105 transition-transform font-display">
+                    <i class="fab fa-youtube"></i>
+                    <span class="font-medium">Visit our YouTube Channel</span>
+                </a>
+            </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="neon-border rounded-2xl p-4 bg-dark/60">
@@ -354,7 +364,10 @@
                     <img src="assets/pics/thumbnail.jpg" alt="Ordo Orphika Logo" class="h-12 w-12 rounded-full">
                 </div>
                 <div class="flex justify-center space-x-8 mb-8">
-                    <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="text-gray-400 hover:text-neon transition-colors">Music</a>
+                    <!-- Old generic Music link intentionally commented out to replace with explicit social links -->
+                    <!-- <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="text-gray-400 hover:text-neon transition-colors">Music</a> -->
+                    <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="text-gray-400 hover:text-neon transition-colors">SoundCloud</a>
+                    <a href="https://www.youtube.com/results?search_query=Ordo+Orphika" target="_blank" class="text-gray-400 hover:text-neon transition-colors">YouTube</a>
                     <a href="#contact" class="text-gray-400 hover:text-accent transition-colors">Contact</a>
                     <a href="#" onclick="openBioPopup()" class="text-gray-400 hover:text-neon transition-colors">Bio</a>
                 </div>

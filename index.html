@@ -25,6 +25,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Oswald:wght@400;500;600;700&family=Anton:wght@400&display=swap" rel="stylesheet">
     
+    <!-- Custom Fonts -->
+    <style>
+        @font-face {
+            font-family: 'Cormorant Light';
+            src: url('assets/fonts/cormorant.light.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    
     <script>
         tailwind.config = {
             theme: {
@@ -179,7 +190,9 @@
                 <!-- Floating responsive logo image replacing the text. Use logo-specific glow effect and larger sizes -->
                 <img src="assets/pics/OrdoOrphica_Title5.png" alt="Ordo Orphika logo" class="mx-auto mb-6 w-[48rem] sm:w-[56rem] md:w-[64rem] lg:w-[72rem] logo-glow" />
             </div>
-            <!--<p class="text-2xl md:text-3xl italic text-white mb-10 font-light">{Sub Title Placeholder}</p>-->
+            <div class="text-gold text-3xl sm:text-4xl md:text-5xl mb-12 animate-float" style="font-family: 'Cormorant Light', serif; animation-delay: 0.3s; letter-spacing: 0.2em; text-shadow: 0 0 20px rgba(212, 175, 55, 0.9), 0 0 40px rgba(212, 175, 55, 0.7), 0 0 60px rgba(212, 175, 55, 0.5);">
+                Rock, Blues & Funk
+            </div>
             <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
                 <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="bg-accent hover:bg-red-700 text-white px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl font-medium text-center">
                     LISTEN NOW

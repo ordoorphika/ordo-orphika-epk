@@ -144,6 +144,39 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        /* CTA utility classes for consistent buttons */
+        .cta-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: #d4af37; /* gold */
+            color: #050508; /* primary dark text */
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+            box-shadow: 0 8px 20px rgba(212,175,55,0.08);
+        }
+        .cta-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 30px rgba(212,175,55,0.12); }
+        .cta-primary:focus { outline: none; box-shadow: 0 0 0 6px rgba(212,175,55,0.12); }
+
+        .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: transparent;
+            color: #d4af37; /* gold text */
+            padding: 0.6rem 1.25rem;
+            border-radius: 0.6rem;
+            border: 1px solid rgba(212,175,55,0.18);
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform .15s ease, filter .15s ease;
+        }
+        .cta-secondary:hover { transform: translateY(-2px) scale(1.01); filter:brightness(1.05); }
     </style>
 </head>
 <body class="bg-dark text-white font-body scroll-smooth">
@@ -196,7 +229,7 @@
                 <a href="#bio" onclick="openBioPopup()" class="text-white hover:text-accent text-lg">Bio</a>
                 <a href="#videos" class="text-white hover:text-gold text-lg">Videos</a>
                 <a href="#music" class="text-white hover:text-gold text-lg">Music</a>
-                <a href="#tour" class="bg-gold text-primary px-4 py-2 rounded-full w-max">TOUR</a>
+                <a href="#tour" class="cta-primary">TOUR</a>
                 <a href="#press" class="text-white hover:text-accent text-lg">Press</a>
                 <a href="#contact" class="text-white hover:text-gold text-lg">Contact</a>
             </nav>
@@ -216,11 +249,11 @@
                 Esoteric Funk N' Roll
             </div>
             <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-                <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="inline-flex items-center justify-center gap-2 bg-[#ff5500] hover:bg-[#ff7700] text-white px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl font-medium">
+                <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="cta-primary" aria-label="Listen on SoundCloud">
                     <i class="fab fa-soundcloud text-2xl"></i>
                     <span class="leading-none">LISTEN NOW</span>
                 </a>
-                <button onclick="scrollToSection('contact')" class="bg-gold text-primary px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-2xl font-medium focus:outline-none focus:ring-4 focus:ring-gold/40">
+                <button onclick="scrollToSection('contact')" class="cta-primary" aria-label="Contact us">
                     CONTACT US
                 </button>
             </div>
@@ -244,7 +277,7 @@
             <h2 class="text-4xl font-display font-bold text-white text-center mb-6">Official Videos</h2>
             <p class="text-center text-gray-300 max-w-2xl mx-auto mb-6">Check out our YouTube channel for more music, live clips, and behind-the-scenes footage.</p>
             <div class="text-center mb-8">
-                <a href="https://www.youtube.com/@OrdoOrphika/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-gold text-primary px-6 py-3 rounded-full shadow-2xl hover:scale-105 transition-transform font-display">
+                <a href="https://www.youtube.com/@OrdoOrphika/" target="_blank" rel="noopener noreferrer" class="cta-secondary font-display" aria-label="Visit YouTube channel">
                     <i class="fab fa-youtube"></i>
                     <span class="font-medium">Visit our YouTube Channel</span>
                 </a>
@@ -344,7 +377,7 @@
                                         <textarea name="message" rows="4" required class="w-full bg-primary/50 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold transition-colors"></textarea>
                                     </div>
                                     <div class="flex justify-end">
-                                        <button type="submit" class="w-full md:w-auto bg-accent hover:bg-red-700 text-white py-3 px-6 rounded-lg transition-colors font-medium">
+                                        <button type="submit" class="w-full md:w-auto cta-primary">
                                             SEND MESSAGE
                                         </button>
                                     </div>

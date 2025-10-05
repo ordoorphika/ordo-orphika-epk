@@ -14,6 +14,37 @@
             border: 1px solid rgba(212, 175, 55, 0.25);
             box-shadow: 0 0 20px rgba(212, 175, 55, 0.08), inset 0 0 18px rgba(31, 41, 55, 0.06);
         }
+        /* CTA utility classes */
+        .cta-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: #d4af37; /* gold */
+            color: #050508; /* primary dark text */
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform .18s ease, box-shadow .18s ease;
+            box-shadow: 0 8px 20px rgba(212,175,55,0.08);
+        }
+        .cta-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 30px rgba(212,175,55,0.12); }
+        .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: transparent;
+            color: #d4af37; /* gold text */
+            padding: 0.6rem 1.25rem;
+            border-radius: 0.6rem;
+            border: 1px solid rgba(212,175,55,0.18);
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform .15s ease, filter .15s ease;
+        }
+        .cta-secondary:hover { transform: translateY(-2px) scale(1.01); filter:brightness(1.05); }
     </style>
 </head>
 <body class="bg-dark text-white font-body section-pattern">
@@ -29,7 +60,7 @@
                 <a href="index.html#contact" class="hover:text-accent transition-all duration-300">Contact</a>
             </div>
             <div class="md:hidden">
-                <a href="index.html" class="text-gold">Back</a>
+                <a href="index.html" class="cta-secondary">Back</a>
             </div>
         </div>
     </nav>

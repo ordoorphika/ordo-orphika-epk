@@ -6,16 +6,25 @@
     <title>Ordo Orphika - Videos</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .section-pattern {
+            background: linear-gradient(135deg, rgba(10, 10, 15, 0.95) 0%, rgba(45, 27, 105, 0.85) 100%);
+        }
+        .neon-border {
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.08), inset 0 0 18px rgba(45, 27, 105, 0.06);
+        }
+    </style>
 </head>
-<body class="bg-dark text-white font-body">
+<body class="bg-dark text-white font-body section-pattern">
     <nav class="fixed w-full bg-primary/95 backdrop-blur-md z-50 shadow-2xl border-b border-gold/20">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-3">
                 <img src="assets/pics/thumbnail.jpg" alt="Ordo Orphika" class="h-10 w-10 rounded-full">
             </a>
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="index.html#home" class="hover:text-deepPurple transition-all duration-300">Home</a>
-                <a href="index.html#music" class="hover:text-deepPurple transition-all duration-300">Music</a>
+                <a href="index.html#home" class="hover:text-gold transition-all duration-300">Home</a>
+                <a href="index.html#music" class="hover:text-gold transition-all duration-300">Music</a>
                 <a href="videos.html" class="text-gold font-semibold">Videos</a>
                 <a href="index.html#contact" class="hover:text-accent transition-all duration-300">Contact</a>
             </div>
@@ -30,13 +39,21 @@
             <h1 class="text-4xl font-display text-gold text-center mb-8">Official Videos</h1>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="aspect-w-16 aspect-h-9 bg-black">
-                    <!-- Embed When You Get Down -->
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/wEdK52XsZPI" title="When You Get Down - Ordo Orphika" frameborder="0" allowfullscreen></iframe>
+                <div class="neon-border rounded-2xl p-4 bg-dark/60">
+                    <div class="relative" style="padding-top:56.25%;">
+                        <!-- Embed When You Get Down -->
+                        <iframe loading="lazy" class="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/wEdK52XsZPI" title="When You Get Down - Ordo Orphika" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="mt-4 text-xl font-display text-gold">When You Get Down</h3>
+                    <p class="text-sm text-gray-300 mt-1">Live in the Studio</p>
                 </div>
-                <div class="aspect-w-16 aspect-h-9 bg-black">
-                    <!-- Embed Thor's Daze Blues -->
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/LUZy7ypJ6vE" title="Thor's Daze Blues - Ordo Orphika" frameborder="0" allowfullscreen></iframe>
+                <div class="neon-border rounded-2xl p-4 bg-dark/60">
+                    <div class="relative" style="padding-top:56.25%;">
+                        <!-- Embed Thor's Daze Blues -->
+                        <iframe loading="lazy" class="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/LUZy7ypJ6vE" title="Thor's Daze Blues - Ordo Orphika" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="mt-4 text-xl font-display text-gold">Thor's Daze Blues</h3>
+                    <p class="text-sm text-gray-300 mt-1">Live in the Studio</p>
                 </div>
             </div>
 

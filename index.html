@@ -60,7 +60,7 @@
                         gold: "#d4af37",
                         dark: "#050508",
                         neon: "#00ff9d",
-                        deepPurple: "#2d1b69"
+                        slateAccent: "#1f2937" /* new complementary neutral for outlines and labels */
                     },
                     fontFamily: {
                         display: ['Oswald', 'sans-serif'],
@@ -103,9 +103,9 @@
             background: linear-gradient(135deg, rgba(10, 10, 15, 0.95) 0%, rgba(45, 27, 105, 0.85) 100%);
         }
         .neon-border {
-            /* Warmer brass/gold border with a subtle deep-purple inset to match site palette */
+            /* Warmer brass/gold border with a subtle slate inset for a refined look */
             border: 1px solid rgba(212, 175, 55, 0.25); /* gold/brass */
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.08), inset 0 0 18px rgba(45, 27, 105, 0.06);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.08), inset 0 0 18px rgba(31, 41, 55, 0.06); /* slateAccent inset */
         }
         .gradient-text {
             background: linear-gradient(135deg, #d4af37, #ffffff);
@@ -289,7 +289,7 @@
                                         <i class="fas fa-envelope text-primary"></i>
                                     </div>
                                     <div class="min-w-0">
-                                        <p class="inline-block bg-deepPurple text-gold px-2 py-1 rounded font-tech">EMAIL</p>
+                                        <p class="inline-block bg-slateAccent text-gold px-2 py-1 rounded font-tech">EMAIL</p>
                                         <a href="mailto:ordoorphika@gmail.com" class="ml-3 text-white hover:text-accent transition-colors truncate">ordoorphika@gmail.com</a>
                                     </div>
                                 </div>
@@ -298,7 +298,7 @@
                                         <i class="fas fa-map-marker-alt text-primary"></i>
                                     </div>
                                     <div class="min-w-0">
-                                        <p class="inline-block bg-deepPurple text-gold px-2 py-1 rounded font-tech">LOCATION</p>
+                                        <p class="inline-block bg-slateAccent text-gold px-2 py-1 rounded font-tech">LOCATION</p>
                                         <p class="ml-3 text-white">Seattle, WA</p>
                                     </div>
                                 </div>
@@ -366,7 +366,7 @@
                 </div>
                 <div class="flex justify-center space-x-8 mb-8">
                     <!-- Old generic Music link intentionally commented out to replace with explicit social links -->
-                    <!-- <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="text-gray-400 hover:text-deepPurple transition-colors">Music</a> -->
+                    <!-- <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="text-gray-400 hover:text-gold transition-colors">Music</a> -->
                     <a href="https://soundcloud.com/ordo-orphika/albums" target="_blank" class="text-gray-400 hover:text-gold transition-colors">SoundCloud</a>
                     <a href="https://www.youtube.com/@OrdoOrphika/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gold transition-colors">YouTube</a>
                     <a href="#contact" class="text-gray-400 hover:text-accent transition-colors">Contact</a>

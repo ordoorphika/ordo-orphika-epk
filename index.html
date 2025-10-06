@@ -383,164 +383,233 @@
 
     <!-- Bio Popup -->
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Orbitron:wght@700&display=swap');
     :root {
-    --gold: #ffd700;
-    --deep-gold: #d4af37;
-    --red: #e23737;
-    --dark: #141414;
+    --deep-gold: #be9b2e;
+    --gold: #ead484;
+    --wine: #840017;
+    --wine-light: #d6bfc9;
+    --bg: #131214;
+    --bg-panel: #18161b;
+    --text-main: #ece8e1;
+    --text-dim: #beb4aa;
     }
-
+    #bio-popup {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: var(--text-main);
+    }
+    #bio-popup .bg-dark\/95 {
+    background: var(--bg-panel);
+    border-radius: 1.3rem;
+    border: 1.8px solid var(--deep-gold);
+    box-shadow: 0 2px 16px #0004, 0 0.5px 0 var(--wine-light);
+    }
     #bio-popup h2 {
-    background: linear-gradient(90deg, var(--gold) 55%, var(--red) 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Orbitron', 'Montserrat', Arial, sans-serif;
-    font-weight: 900;
-    text-shadow:
-        0 2px 14px rgba(255, 215, 0, 0.29),
-        0 1px 38px var(--red),
-        0 0px 4px #fff8;
-    }
-
-    #bio-popup .w-24 {
-    background: linear-gradient(90deg, var(--gold) 60%, var(--red) 100%);
-    box-shadow: 0 0 6px 1px var(--red), 0 0 10px 2px var(--gold);
-    }
-
-    #bio-popup h4,
-    #bio-popup h5,
-    #bio-popup .text-gold,
-    #bio-popup .council-title {
-    background: linear-gradient(90deg, var(--gold), var(--deep-gold) 55%, var(--red) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: 'Orbitron', 'Montserrat', sans-serif;
+    font-size: 2.1rem;
     font-weight: 700;
-    text-shadow:
-        0 1px 12px var(--gold),
-        0 2px 6px var(--red),
-        0 0px 4px #fff5;
+    letter-spacing: 0.02em;
+    color: var(--deep-gold);
+    margin-bottom: .35em;
+    background: none;
+    text-shadow: none;
     }
-
+    #bio-popup .w-24 {
+    background: linear-gradient(90deg, var(--deep-gold), var(--wine) 85%);
+    height: 3px !important;
+    border-radius: 1.5px;
+    margin-bottom: 1.7rem !important;
+    }
+    #bio-popup p,
+    #bio-popup .text-base {
+    color: var(--text-main);
+    font-size: 1.07em;
+    line-height: 1.66;
+    margin-bottom: .5em;
+    }
+    #bio-popup .text-gold,
+    #bio-popup h4,
+    #bio-popup h5 {
+    color: var(--deep-gold);
+    font-weight: bold;
+    background: none !important;
+    -webkit-text-fill-color: unset !important;
+    font-family: 'Montserrat', sans-serif;
+    }
     #bio-popup .text-accent,
     #bio-popup .council-role {
-    color: var(--red) !important;
-    text-shadow: 0 1px 14px var(--gold), 0 0 6px var(--red);
+    color: var(--wine);
+    font-weight: 500;
     }
-
     #bio-popup .font-semibold {
+    font-weight: 600;
     color: var(--gold);
-    text-shadow: 0 1px 12px var(--red);
     }
-
-    #bio-popup .text-accent.font-semibold {
-    background: linear-gradient(90deg, var(--red), var(--gold));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    text-shadow: 0 0 16px var(--red), 0 1px 12px var(--gold);
+    #bio-popup .bg-dark\/95 {
+    padding: 2.2rem 2rem 1.6rem 2rem;
+    }
+    #bio-popup .council-title {
+    font-size: 1.16em;
+    color: var(--deep-gold);
+    letter-spacing: 0.01em;
+    margin-bottom: .27em;
+    }
+    #bio-popup .council-role {
+    font-size: .93em;
+    color: var(--wine);
+    letter-spacing: 0.01em;
+    margin-bottom: .21em;
+    }
+    #bio-popup .grid {
+    gap: 1.2em 1.4em;
+    }
+    #bio-popup .text-center {
+    text-align: center;
+    }
+    #bio-popup .rounded-xl, #bio-popup .rounded-2xl {
+    border-radius: 12px;
+    }
+    #bio-popup img {
+    border-radius: 10px;
+    border: 1.5px solid var(--deep-gold);
+    box-shadow: 0 2px 11px #0002;
+    }
+    #bio-popup .neon-border {
+    border: 1.3px solid var(--deep-gold);
+    background: var(--bg);
+    padding: 5px;
+    }
+    #bio-popup .grid > div {
+    background: #151318;
+    border-radius: 10px;
+    border: 1px solid #b8b2c899;
+    box-shadow: 0 2px 9px #0001;
+    padding: 1.1em .5em .28em .5em;
+    }
+    #bio-popup .text-xs {
+    color: var(--text-dim);
+    font-size: 0.93em;
+    text-decoration: none;
+    transition: color 0.13s;
+    }
+    #bio-popup .text-xs:hover {
+    color: var(--wine);
+    text-decoration: underline;
+    }
+    #bio-popup button {
+    background: none;
+    border: none;
+    color: var(--deep-gold);
+    font-size: 2em;
+    cursor: pointer;
+    right: 1.8rem;
+    top: 1.7rem;
+    transition: color 0.13s;
+    }
+    #bio-popup button:hover {
+    color: var(--wine);
+    }
+    @media (max-width:700px) {
+    #bio-popup .bg-dark\/95 { padding: 1.1rem .3rem 1rem .3rem; }
+    #bio-popup .grid { gap: .65em; }
     }
     </style>
     <div id="bio-popup" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-dark/95 rounded-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto neon-border relative">
-            <button onclick="closeBioPopup()" class="absolute top-4 right-4 text-gold hover:text-accent text-3xl transition-colors">
+            <button onclick="closeBioPopup()" class="absolute top-4 right-4">
                 <i class="fas fa-times"></i>
             </button>
-            
-            <h2 class="text-3xl font-display font-bold text-white text-center mb-2">THE ORPHIC MYSTERY</h2>
-            <p class="text-center text-gray-400 mb-6">A concise history and the musical philosophy behind Ordo Orphika</p>
-            <div class="w-24 h-0.5 bg-gold mx-auto mb-6 rounded"></div>
-            
+            <h2 class="text-3xl font-display font-bold text-center mb-2">THE ORPHIC MYSTERY</h2>
+            <p class="text-center text-gray-400 mb-6 text-dim">A concise history and the musical philosophy behind Ordo Orphika</p>
+            <div class="w-24 h-0.5 mx-auto mb-6 rounded"></div>
             <div class="grid lg:grid-cols-2 gap-8 items-start">
                 <div class="relative">
-                    <div class="neon-border rounded-2xl p-2">
+                    <div class="neon-border rounded-2xl">
                         <img src="assets/pics/band_pic.jpeg" alt="Ordo Orphika band members performing" class="rounded-2xl w-full h-auto shadow-2xl" loading="lazy">
                     </div>
                 </div>
                 <div class="space-y-4">
-                    <p class="text-base leading-relaxed">
+                    <p>
                         A word of wisdom in foolish times is worth its weight in gold. And so it goes with the philosophy of transmutation at the heart of <span class="text-gold">Ordo Orphika</span>.
                     </p>
-                    <p class="text-base leading-relaxed">
+                    <p>
                         Genre-agnostic, equal parts improvisation and orchestration, and with a spirit of cult-like inclusivity. We celebrate the ascent — and sometimes the descent — of man, through a society dedicated to our oldest rebel, the poet-musician and founder of the ancient mysteries, <span class="text-accent">Orpheus</span>.
                     </p>
-                    <p class="text-base leading-relaxed">
+                    <p>
                         Join us on a journey of self-reflection and exploration as we seek perspective, connection, and the shared mysteries that bind us across time.
                     </p>
-                    <p class="text-base leading-relaxed">
+                    <p>
                         <span class="text-gold">Ordo Orphika</span> is a 5 piece band from Seattle, their influences span a number of genres ranging from rock, <span class="text-gold font-semibold">blues</span>, <span class="text-gold font-semibold">funk</span>, jazz, lo fi, dance music, and <span class="text-gold font-semibold">psychedelia</span>. It features Seattle music veterans <span class="text-accent">Ian McKagan</span> (Kings of Cavalier, Morning Glory Revival) on guitar and <span class="text-accent">Woody Frank</span> (Whitney Monge, Map of the Woulds) on bass, as well as Saxophonist (Dr.) <span class="text-accent">Mathew Wooten</span>, Keys player <span class="text-accent">Jon Plaut</span>, and the handsome and mysterious drummer <span class="text-accent">Robby DeRosa</span> from the exotic far eastern land of New Jersey!
                     </p>
-                    <p class="text-base leading-relaxed">
-                        <span class="text-gold font-semibold">What will you hear?</span>
-                    </p>
-                    <p class="text-base leading-relaxed">
+                    <p><span class="text-gold font-semibold">What will you hear?</span></p>
+                    <p>
                         Rich harmonies, interweaving and genre bending soloist, lyrics rich with meaning, symbolism and mythology, both old and new. Diverse songs that aspire to take you on a journey to a higher place within yourself, or maybe just to find the lowest common denominator.
                     </p>
-                    <p class="text-base leading-relaxed text-accent font-semibold">
+                    <p class="text-accent font-semibold">
                         Come and join the cult today! We have snakes! 🐍
                     </p>
-                    
                     <!-- Member Photos -->
                     <div class="pt-6">
-                        <h4 class="text-xl font-display text-gold mb-4 text-center">THE ORPHIC COUNCIL</h4>
+                        <h4 class="text-xl font-display text-gold mb-4 text-center council-title">THE ORPHIC COUNCIL</h4>
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                             <div class="text-center">
                                 <a href="members/ian.html" class="block">
-                                    <div class="neon-border rounded-xl p-2 mb-3 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                                    <div class="neon-border rounded-xl mb-3">
                                         <img src="assets/pics/Ordo_Photoshoot/Ian_Thumbnail.jpeg" alt="Ian McKagan - Guitar" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                     </div>
                                 </a>
                                 <h5 class="text-sm font-display text-gold">Ian McKagan</h5>
-                                <p class="text-gold font-tech text-xs">Guitar</p>
-                                <a href="members/ian.html" class="text-xs text-gray-400 hover:text-gold mt-2 inline-block">Learn more</a>
+                                <p class="text-gold font-tech text-xs council-role">Guitar</p>
+                                <a href="members/ian.html" class="text-xs mt-2 inline-block">Learn more</a>
                             </div>
                             <div class="text-center">
                                 <a href="members/woody.html" class="block">
-                                    <div class="neon-border rounded-xl p-2 mb-3 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                                    <div class="neon-border rounded-xl mb-3">
                                         <img src="assets/pics/Ordo_Photoshoot/Woody_Thumbnail.jpeg" alt="Woody Frank - Bass" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                     </div>
                                 </a>
                                 <h5 class="text-sm font-display text-gold">Woody Frank</h5>
-                                <p class="text-gold font-tech text-xs">Bass</p>
-                                <a href="members/woody.html" class="text-xs text-gray-400 hover:text-gold mt-2 inline-block">Learn more</a>
+                                <p class="text-gold font-tech text-xs council-role">Bass</p>
+                                <a href="members/woody.html" class="text-xs mt-2 inline-block">Learn more</a>
                             </div>
                             <div class="text-center">
                                 <a href="members/jon.html" class="block">
-                                    <div class="neon-border rounded-xl p-2 mb-3 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                                    <div class="neon-border rounded-xl mb-3">
                                         <img src="assets/pics/Ordo_Photoshoot/Jon_Thumbnail.jpeg" alt="Jon Plaut - Keys" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                     </div>
                                 </a>
                                 <h5 class="text-sm font-display text-gold">Jon Plaut</h5>
-                                <p class="text-gold font-tech text-xs">Keys</p>
-                                <a href="members/jon.html" class="text-xs text-gray-400 hover:text-gold mt-2 inline-block">Learn more</a>
+                                <p class="text-gold font-tech text-xs council-role">Keys</p>
+                                <a href="members/jon.html" class="text-xs mt-2 inline-block">Learn more</a>
                             </div>
                             <div class="text-center">
                                 <a href="members/mathew.html" class="block">
-                                    <div class="neon-border rounded-xl p-2 mb-3 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                                    <div class="neon-border rounded-xl mb-3">
                                         <img src="assets/pics/Ordo_Photoshoot/Mathew_Thumbnail.jpeg" alt="Mathew Wooten - Saxophone" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                     </div>
                                 </a>
                                 <h5 class="text-sm font-display text-gold">Mathew Wooten</h5>
-                                <p class="text-gold font-tech text-xs">Saxophone</p>
-                                <a href="members/mathew.html" class="text-xs text-gray-400 hover:text-gold mt-2 inline-block">Learn more</a>
+                                <p class="text-gold font-tech text-xs council-role">Saxophone</p>
+                                <a href="members/mathew.html" class="text-xs mt-2 inline-block">Learn more</a>
                             </div>
                             <div class="text-center">
                                 <a href="members/robby.html" class="block">
-                                    <div class="neon-border rounded-xl p-2 mb-3 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                                    <div class="neon-border rounded-xl mb-3">
                                         <img src="assets/pics/Ordo_Photoshoot/Robby_Thumbnail.jpeg" alt="Robby DeRosa - Drums" class="rounded-lg w-full h-32 object-cover shadow-xl">
                                     </div>
                                 </a>
                                 <h5 class="text-sm font-display text-gold">Robby DeRosa</h5>
-                                <p class="text-gold font-tech text-xs">Drums</p>
-                                <a href="members/robby.html" class="text-xs text-gray-400 hover:text-gold mt-2 inline-block">Learn more</a>
+                                <p class="text-gold font-tech text-xs council-role">Drums</p>
+                                <a href="members/robby.html" class="text-xs mt-2 inline-block">Learn more</a>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
+
+    
     <script>
         // Smooth scrolling for navigation
         function scrollToSection(sectionId) {

@@ -381,6 +381,38 @@
         </div>
     </footer>
 
+<!-- COLOR CONTROLS: Edit anything here to change site colors instantly -->
+<style>
+:root {
+  --color-gold:     #ead484;
+  --color-gold-dark:#be9b2e;
+  --color-orgbold:  #ded395;
+  --color-accent:   #b15eff;   /* band member names (purple) */
+  --color-accent2:  #cc1d47;   /* deeper red accent, e.g., for links */
+  --psyche-fg:      #7f21e6;   /* only for 'psychedelia' */
+  --psyche-shadow:  #faee3a;
+  --bg-main:        #131214;
+  --bg-panel:       #18161b;
+  --border-main:    #be9b2e;
+}
+.text-gold { color: var(--color-gold-dark) !important; font-weight: bold; }
+.text-psyche {
+  color: var(--psyche-fg) !important;
+  font-weight: bold;
+  text-shadow: 0 0 8px var(--psyche-shadow), 0 1px 4px #0004;
+}
+.text-accent, .council-title, .council-role {
+  color: var(--color-accent) !important;
+  font-weight: 600;
+}
+.text-accent2 { color: var(--color-accent2) !important; }
+.w-24 { background: linear-gradient(90deg, var(--color-gold-dark), var(--color-accent2) 85%); height: 3px !important; border-radius: 1.5px; }
+.bg-dark\/95 { background: var(--bg-panel); }
+body, .bg-main { background: var(--bg-main); }
+.neon-border, .border-main { border: 1.8px solid var(--border-main); }
+.text-xs:hover { color: var(--color-accent2); }
+</style>
+
     <!-- Bio Popup -->
     <div id="bio-popup" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-dark/95 rounded-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto neon-border relative">
@@ -409,7 +441,7 @@
                         Join us on a journey of self-reflection and exploration as we seek perspective, connection, and the shared mysteries that bind us across time.
                     </p>
                     <p class="text-base leading-relaxed">
-                        <span class="text-gold">Ordo Orphika</span> is a 5 piece band from Seattle, their influences span a number of genres ranging from rock, <span class="text-gold font-semibold">blues</span>, <span class="text-gold font-semibold">funk</span>, jazz, lo fi, dance music, and <span class="text-gold font-semibold">psychedelia</span>. It features Seattle music veterans <span class="text-accent">Ian McKagan</span> (Kings of Cavalier, Morning Glory Revival) on guitar and <span class="text-accent">Woody Frank</span> (Whitney Monge, Map of the Woulds) on bass, as well as Saxophonist (Dr.) <span class="text-accent">Mathew Wooten</span>, Keys player <span class="text-accent">Jon Plaut</span>, and the handsome and mysterious drummer <span class="text-accent">Robby DeRosa</span> from the exotic far eastern land of New Jersey!
+                        <span class="text-gold">Ordo Orphika</span> is a 5 piece band from Seattle, their influences span a number of genres ranging from rock, <span class="text-gold font-semibold">blues</span>, <span class="text-gold font-semibold">funk</span>, jazz, lo fi, dance music, and <span class="text-psyche font-semibold">psychedelia</span>. It features Seattle music veterans <span class="text-accent">Ian McKagan</span> (Kings of Cavalier, Morning Glory Revival) on guitar and <span class="text-accent">Woody Frank</span> (Whitney Monge, Map of the Woulds) on bass, as well as Saxophonist (Dr.) <span class="text-accent">Mathew Wooten</span>, Keys player <span class="text-accent">Jon Plaut</span>, and the handsome and mysterious drummer <span class="text-accent">Robby DeRosa</span> from the exotic far eastern land of New Jersey!
                     </p>
                     <p class="text-base leading-relaxed">
                         <span class="text-gold font-semibold">What will you hear?</span>
@@ -432,7 +464,7 @@
                                     </div>
                                 </a>
                                 <h5 class="text-sm font-display text-gold">Ian McKagan</h5>
-                                <p class="text-gold font-tech text-xs">Guitar</p>
+                                <p class="text-accent font-tech text-xs">Guitar</p>
                                 <a href="members/ian.html" class="text-xs text-gray-400 hover:text-gold mt-2 inline-block">Learn more</a>
                             </div>
                             <div class="text-center">
@@ -442,7 +474,7 @@
                                     </div>
                                 </a>
                                 <h5 class="text-sm font-display text-gold">Woody Frank</h5>
-                                <p class="text-gold font-tech text-xs">Bass</p>
+                                <p class="text-accent font-tech text-xs">Bass</p>
                                 <a href="members/woody.html" class="text-xs text-gray-400 hover:text-gold mt-2 inline-block">Learn more</a>
                             </div>
                             <div class="text-center">
@@ -452,7 +484,7 @@
                                     </div>
                                 </a>
                                 <h5 class="text-sm font-display text-gold">Jon Plaut</h5>
-                                <p class="text-gold font-tech text-xs">Keys</p>
+                                <p class="text-accent font-tech text-xs">Keys</p>
                                 <a href="members/jon.html" class="text-xs text-gray-400 hover:text-gold mt-2 inline-block">Learn more</a>
                             </div>
                             <div class="text-center">
@@ -462,7 +494,7 @@
                                     </div>
                                 </a>
                                 <h5 class="text-sm font-display text-gold">Mathew Wooten</h5>
-                                <p class="text-gold font-tech text-xs">Saxophone</p>
+                                <p class="text-accent font-tech text-xs">Saxophone</p>
                                 <a href="members/mathew.html" class="text-xs text-gray-400 hover:text-gold mt-2 inline-block">Learn more</a>
                             </div>
                             <div class="text-center">
@@ -472,16 +504,16 @@
                                     </div>
                                 </a>
                                 <h5 class="text-sm font-display text-gold">Robby DeRosa</h5>
-                                <p class="text-gold font-tech text-xs">Drums</p>
+                                <p class="text-accent font-tech text-xs">Drums</p>
                                 <a href="members/robby.html" class="text-xs text-gray-400 hover:text-gold mt-2 inline-block">Learn more</a>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+
     <script>
         // Smooth scrolling for navigation
         function scrollToSection(sectionId) {

@@ -382,6 +382,64 @@
     </footer>
 
     <!-- Bio Popup -->
+    <style>
+    :root {
+    --gold: #ffd700;
+    --deep-gold: #d4af37;
+    --red: #e23737;
+    --dark: #141414;
+    }
+
+    #bio-popup h2 {
+    background: linear-gradient(90deg, var(--gold) 55%, var(--red) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Orbitron', 'Montserrat', Arial, sans-serif;
+    font-weight: 900;
+    text-shadow:
+        0 2px 14px rgba(255, 215, 0, 0.29),
+        0 1px 38px var(--red),
+        0 0px 4px #fff8;
+    }
+
+    #bio-popup .w-24 {
+    background: linear-gradient(90deg, var(--gold) 60%, var(--red) 100%);
+    box-shadow: 0 0 6px 1px var(--red), 0 0 10px 2px var(--gold);
+    }
+
+    #bio-popup h4,
+    #bio-popup h5,
+    #bio-popup .text-gold,
+    #bio-popup .council-title {
+    background: linear-gradient(90deg, var(--gold), var(--deep-gold) 55%, var(--red) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-shadow:
+        0 1px 12px var(--gold),
+        0 2px 6px var(--red),
+        0 0px 4px #fff5;
+    }
+
+    #bio-popup .text-accent,
+    #bio-popup .council-role {
+    color: var(--red) !important;
+    text-shadow: 0 1px 14px var(--gold), 0 0 6px var(--red);
+    }
+
+    #bio-popup .font-semibold {
+    color: var(--gold);
+    text-shadow: 0 1px 12px var(--red);
+    }
+
+    #bio-popup .text-accent.font-semibold {
+    background: linear-gradient(90deg, var(--red), var(--gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-shadow: 0 0 16px var(--red), 0 1px 12px var(--gold);
+    }
+    </style>
     <div id="bio-popup" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-dark/95 rounded-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto neon-border relative">
             <button onclick="closeBioPopup()" class="absolute top-4 right-4 text-gold hover:text-accent text-3xl transition-colors">
@@ -477,6 +535,7 @@
                             </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>
